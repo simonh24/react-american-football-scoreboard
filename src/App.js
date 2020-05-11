@@ -15,8 +15,8 @@ function App() {
   const awayFieldGoal = event => setAwayScore(awayScore + 3);
   const homeName = event => setHomeTeamName(window.prompt("Enter Home Team Name:"));
   const awayName = event => setAwayTeamName(window.prompt("Enter Away Team Name:"));
-  const homeStartScore = event => setHomeScore(window.prompt("Enter Home Team Score:"));
-  const awayStartScore = event => setAwayScore(window.prompt("Enter Away Team Score:"));
+  const homeStartScore = event => setHomeScore(Number(window.prompt("Enter Home Team Score:")));
+  const awayStartScore = event => setAwayScore(Number(window.prompt("Enter Away Team Score:")));
   return (
     <div className="container">
       <section className="scoreboard">
